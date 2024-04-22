@@ -1,0 +1,2 @@
+# git_training_program
+アプリケーションを使用したGIT操作を練習
