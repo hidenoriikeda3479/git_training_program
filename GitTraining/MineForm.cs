@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
@@ -59,6 +60,17 @@ namespace WindowsFormsApp1
         /// <param name="e">イベントに関する情報</param>
         private void btnName_Click(object sender, EventArgs e)
         {
+
+            var nameForm = new NameForm();
+            var result = nameForm.ShowDialog();
+
+            if(result == DialogResult.OK)
+            {
+                var name = nameForm.Resultname;
+                lblName.Text = $"{name}";
+            }
+
+            
             // TODO:子画面のテキストボックス（名前）を入力し、その結果を親画面に反映
 
             // 画面を初期化
