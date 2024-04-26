@@ -122,7 +122,7 @@ namespace WindowsFormsApp1
             // 
             // btnRemarks
             // 
-            this.btnRemarks.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnRemarks.BackColor = System.Drawing.SystemColors.Control;
             this.btnRemarks.Location = new System.Drawing.Point(93, 113);
             this.btnRemarks.Name = "btnRemarks";
             this.btnRemarks.Size = new System.Drawing.Size(75, 23);
