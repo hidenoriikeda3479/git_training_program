@@ -11,10 +11,19 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// 名前画面
+    /// </summary>
     public partial class NameForm : Form
     {
-
+        /// <summary>
+        /// 名前編集
+        /// </summary>
         public string ResultName { get; private set; }
+
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
         public NameForm()
         {
             InitializeComponent();
@@ -31,7 +40,7 @@ namespace WindowsFormsApp1
             string name = txtName.Text;
 
             // 何も入力されていな場合、エラーメッセージを表示する
-            if (txtName.Text == "")
+            if (string.IsNullOrEmpty(txtName.Text))
             {
                 MessageBox.Show("何も入力されていません");
 

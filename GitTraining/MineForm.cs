@@ -60,26 +60,18 @@ namespace WindowsFormsApp1
         /// <param name="e">イベントに関する情報</param>
         private void btnName_Click(object sender, EventArgs e)
         {
-
+            // 名前画面を初期化
             var nameForm = new NameForm();
+
+            // 画面を表示
             var result = nameForm.ShowDialog();
 
+            // 入力結果が正常か
             if(result == DialogResult.OK)
             {
                 var name = nameForm.ResultName;
                 lblName.Text = $"{name}";
             }
-
-            
-            // TODO:子画面のテキストボックス（名前）を入力し、その結果を親画面に反映
-
-            // 画面を初期化
-
-            // 画面をShowDialogで開く
-
-            // 画面の入力結果を受け取る
-
-            // 入力結果に基づいて入力内容をメイン画面に反映する。
         }
 
         /// <summary>
