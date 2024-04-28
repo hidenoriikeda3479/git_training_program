@@ -59,8 +59,6 @@ namespace WindowsFormsApp1
         /// <param name="e">イベントに関する情報</param>
         private void btnName_Click(object sender, EventArgs e)
         {
-            // TODO:子画面のテキストボックス（名前）を入力し、その結果を親画面に反映
-
             // 画面を初期化
 
             // 画面をShowDialogで開く
@@ -77,8 +75,6 @@ namespace WindowsFormsApp1
         /// <param name="e">イベントに関する情報</param>
         private void btnRemarks_Click(object sender, EventArgs e)
         {
-            // TODO:子画面のテキストボックス（備考）を入力し、その結果を親画面に反映
-
             // 画面を初期化
             var remarks = new Remarks();
             // 画面をShowDialogで開く
@@ -86,6 +82,7 @@ namespace WindowsFormsApp1
 
             // 画面の入力結果を受け取る
             var remarkstext = remarks.ResultRemarks;
+
             // 入力結果に基づいて入力内容をメイン画面に反映する。
             // 画面の処理結果を参照
             // 備考入力結果がOKの場合にのみ、条件分岐内の処理を実行

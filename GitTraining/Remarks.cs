@@ -35,7 +35,6 @@ namespace WindowsFormsApp1
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-           
             // 入力欄から入力結果を格納
             string Remarkstext = textBox1.Text;
 
