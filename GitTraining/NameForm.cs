@@ -36,7 +36,6 @@ namespace WindowsFormsApp1
         /// <param name="e"></param>
         private void btnName2_Click(object sender, EventArgs e)
         {
-
             string name = txtName.Text;
 
             // 何も入力されていな場合、エラーメッセージを表示する
@@ -44,15 +43,12 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("何も入力されていません");
 
-                // 入力成功結果にNGを設定する
-                // 画面が閉じられたときにこの結果が戻り値として渡されます
-                // DialogResultに値を設定すると処理終了後、自動的に画面が閉じられます
+                // 入力の成否
                 DialogResult = DialogResult.No;
                 return;
             }
 
-            // 入力成功結果にOKを設定する
-            // DialogResultに値を設定すると処理終了後、自動的に画面が閉じられます
+            // 入力成功時に自動で画面を閉じる
             DialogResult = DialogResult.OK;
 
             // 名前の入力結果を親画面に受け渡すためのプロパティに格納
