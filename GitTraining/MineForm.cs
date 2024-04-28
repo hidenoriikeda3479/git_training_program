@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
@@ -59,13 +60,18 @@ namespace WindowsFormsApp1
         /// <param name="e">イベントに関する情報</param>
         private void btnName_Click(object sender, EventArgs e)
         {
-            // 画面を初期化
+            // 名前画面を初期化
+            var nameForm = new NameForm();
 
-            // 画面をShowDialogで開く
+            // 画面を表示
+            var result = nameForm.ShowDialog();
 
-            // 画面の入力結果を受け取る
-
-            // 入力結果に基づいて入力内容をメイン画面に反映する。
+            // 入力結果が正常か
+            if(result == DialogResult.OK)
+            {
+                var name = nameForm.ResultName;
+                lblName.Text = name;
+            }
         }
 
         /// <summary>
@@ -75,28 +81,15 @@ namespace WindowsFormsApp1
         /// <param name="e">イベントに関する情報</param>
         private void btnRemarks_Click(object sender, EventArgs e)
         {
+            // TODO:子画面のテキストボックス（備考）を入力し、その結果を親画面に反映
+
             // 画面を初期化
-            var remarks = new Remarks();
 
             // 画面をShowDialogで開く
-            var result = remarks.ShowDialog();
 
             // 画面の入力結果を受け取る
-            var remarkstext = remarks.ResultRemarks;
 
             // 入力結果に基づいて入力内容をメイン画面に反映する。
-            // 画面の処理結果を参照
-            // 備考入力結果がOKの場合にのみ、条件分岐内の処理を実行
-            if (result == DialogResult.OK)
-            {
-                // 備考編集で入力した内容を、プロパティ経由で取得
-                lblRemarks.Text = $"{remarkstext}";
-            }
-            // 処理結果がOK以外なら
-            else
-            {
-                MessageBox.Show("備考編集をやり直してください");
-            }
         }
     }
 }
