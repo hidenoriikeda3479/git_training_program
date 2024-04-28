@@ -65,6 +65,8 @@ namespace WindowsFormsApp1
 
             // 画面をShowDialogで開く
 
+
+            MessageBox.Show("");
             // 画面の入力結果を受け取る
 
             // 入力結果に基づいて入力内容をメイン画面に反映する。
@@ -83,6 +85,7 @@ namespace WindowsFormsApp1
 
             // 画面をShowDialogで開く
 
+            MessageBox.Show("");
             // 画面の入力結果を受け取る
 
             // 入力結果に基づいて入力内容をメイン画面に反映する。
