@@ -70,7 +70,7 @@ namespace WindowsFormsApp1
             if(result == DialogResult.OK)
             {
                 var name = nameForm.ResultName;
-                lblName.Text = "{name}";
+                lblName.Text = name;
             }
         }
 
