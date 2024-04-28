@@ -43,26 +43,29 @@ namespace WindowsFormsApp1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 62);
+            this.label1.Location = new System.Drawing.Point(77, 93);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.Size = new System.Drawing.Size(44, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "名前";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 118);
+            this.label3.Location = new System.Drawing.Point(77, 177);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 12);
+            this.label3.Size = new System.Drawing.Size(44, 18);
             this.label3.TabIndex = 5;
             this.label3.Text = "備考";
             // 
             // btnAge
             // 
-            this.btnAge.Location = new System.Drawing.Point(157, 24);
+            this.btnAge.Location = new System.Drawing.Point(262, 36);
+            this.btnAge.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnAge.Name = "btnAge";
-            this.btnAge.Size = new System.Drawing.Size(75, 23);
+            this.btnAge.Size = new System.Drawing.Size(125, 34);
             this.btnAge.TabIndex = 6;
             this.btnAge.Text = "年齢算出";
             this.btnAge.UseVisualStyleBackColor = true;
@@ -71,9 +74,10 @@ namespace WindowsFormsApp1
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 29);
+            this.label4.Location = new System.Drawing.Point(77, 44);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 12);
+            this.label4.Size = new System.Drawing.Size(44, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "年齢";
             // 
@@ -81,18 +85,20 @@ namespace WindowsFormsApp1
             // 
             this.lblAge.AutoSize = true;
             this.lblAge.BackColor = System.Drawing.Color.White;
-            this.lblAge.Location = new System.Drawing.Point(91, 29);
+            this.lblAge.Location = new System.Drawing.Point(152, 44);
+            this.lblAge.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(31, 12);
+            this.lblAge.Size = new System.Drawing.Size(48, 18);
             this.lblAge.TabIndex = 3;
             this.lblAge.Text = "XX歳";
             // 
             // btnName
             // 
-            this.btnName.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnName.Location = new System.Drawing.Point(157, 57);
+            this.btnName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnName.Location = new System.Drawing.Point(262, 86);
+            this.btnName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnName.Name = "btnName";
-            this.btnName.Size = new System.Drawing.Size(75, 23);
+            this.btnName.Size = new System.Drawing.Size(125, 34);
             this.btnName.TabIndex = 7;
             this.btnName.Text = "名前編集";
             this.btnName.UseVisualStyleBackColor = false;
@@ -102,9 +108,10 @@ namespace WindowsFormsApp1
             // 
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(91, 62);
+            this.lblName.Location = new System.Drawing.Point(152, 93);
+            this.lblName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(41, 12);
+            this.lblName.Size = new System.Drawing.Size(64, 18);
             this.lblName.TabIndex = 8;
             this.lblName.Text = "XX　XX";
             // 
@@ -112,9 +119,10 @@ namespace WindowsFormsApp1
             // 
             this.lblRemarks.AutoSize = true;
             this.lblRemarks.BackColor = System.Drawing.Color.White;
-            this.lblRemarks.Location = new System.Drawing.Point(46, 145);
+            this.lblRemarks.Location = new System.Drawing.Point(77, 218);
+            this.lblRemarks.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblRemarks.Name = "lblRemarks";
-            this.lblRemarks.Size = new System.Drawing.Size(278, 48);
+            this.lblRemarks.Size = new System.Drawing.Size(437, 72);
             this.lblRemarks.TabIndex = 8;
             this.lblRemarks.Text = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\r\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\r" +
     "\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\r\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" +
@@ -123,9 +131,10 @@ namespace WindowsFormsApp1
             // btnRemarks
             // 
             this.btnRemarks.BackColor = System.Drawing.SystemColors.Control;
-            this.btnRemarks.Location = new System.Drawing.Point(93, 113);
+            this.btnRemarks.Location = new System.Drawing.Point(155, 170);
+            this.btnRemarks.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnRemarks.Name = "btnRemarks";
-            this.btnRemarks.Size = new System.Drawing.Size(75, 23);
+            this.btnRemarks.Size = new System.Drawing.Size(125, 34);
             this.btnRemarks.TabIndex = 7;
             this.btnRemarks.Text = "備考編集";
             this.btnRemarks.UseVisualStyleBackColor = false;
@@ -133,9 +142,9 @@ namespace WindowsFormsApp1
             // 
             // MineForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 220);
+            this.ClientSize = new System.Drawing.Size(607, 330);
             this.Controls.Add(this.lblRemarks);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.btnRemarks);
@@ -145,6 +154,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.lblAge);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "MineForm";
             this.Text = "メイン";
             this.ResumeLayout(false);
